@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<style type='text/css'>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+ 
+    body {
+        background-image: url('https://lh3.googleusercontent.com/pw/AP1GczM_CoMG93rJT0nUTR3jbcdABeC-7he1SK8YuesbOYV-1i34Obt29II_BQA-3MveTQ15odRsgImnEuTKPNDrdGThabm9fpV_opr8MvP8pKhpvoNh94s5T-DnUqVFL2adKNnGk-HrcVk3_aglJFP7ymfgBg7wFX_NPDJKqXnpxC-ABC7S8PDHJP7AS9ciDfB_LaZSByerH5szIVWF_WyOjsS5NPpZgzXskozxR9UHhpvUL1dZibsKWSF05pdpLFVEYfkoXs8vNcTUnZFyenDE6PkS_eT90Rvb4FUGupohHru4asgj1L2g70SAHRM76zf0gSzQWroGg-tQGqn-uU8ht_tV51i3ihkM41ggn4IR7SGS3K3Yo6caW011DzIP36_BPvhGh7hjALMklPqxnX7r1CR24hEk8l2ekBVjUgJrO6q37QhBsf0PqXFXm-R10SxLIIMNclrX-NrWMZTgQ_1fedW96PDYTPfQtEQSghhKhfJCe70HS6ZN_PKN0IBeHjy1S2fOGpNVZM-IT4AZ6wItLgwzn3aZav-CQ_BRQCgsvEtQn5QUuJo1RdC0Sjveroy93OEd7Skz2pr7sUCzpG0xQsaGpFUR5usHi0HUkibmtK5oaPksSUsUvipk_BN8mR16yXxxZwAT-D6ijluFU4APALiHic-iyG51x7iLIqsjE-6L3a2RnUPer6tYJkm1CKI5FtfQoHYqS4BDphR5fgk_mM5kcIFOICdIqQuNvbULa3WhDsxvACHm4kF5yK-iVR9eY-zNmZje-bYPP7uJBnC5Z-WZQnhShy4UL45diNIc9Ax44KntP9WM8pbrqcuSiIWkxj6X_efcohYLiJUY-6dB2wLpTPO0l1DGHkLU-7g7wQgRIfZKJcAOi69a6UuUpeTjjooEOQ9RvF2TKX5x003JejWcBBxZu8_zqrFCnymiLcmymMal7BI02bBnLwQOZe9jzWkLNv02I0okdAcuzCFlDKP6rXrT2oitnzh_zzWjUdWpZ6l50R1BZ1v5TNMJitVfbuh68XNhVrpygaGq-QBjW8lqzHCKGMcwDLOkK2k5B6mFx9n8bC6371UyeiPXl43QilspIhl2X9R2Vyutp-QL2OcjXchqAxzYkAYtFe-oCg=w928-h928-s-no-gm?authuser=0');
+        
+        background-size: cover;
+        font-family: sans-serif;
+        margin-top: 30px;
+        padding: 0;
+        margin: 0;
+    } 
+
+
+    
+
+    table {
+        border-radius: 20px;
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 86%;
+        margin: auto;
+    }
+
+    td,
+    th {
+        padding: 10px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .col{
+      position: relative;
+      bottom: -150px;
+    }
+</style>
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="./2302956_woman_model_face_3840x2160.mp4" type="video/mp4">
+      </video> -->
+
+    <title>Face Recognition Based Attendance System</title>
+</head>
+
+<body >
+
+
+
+    
+    <div style="text-align: center; background-color:#66a3d26f;width:700px;margin-left: 390px; border-radius: 20px;margin: auto;margin-top:50px;  box-shadow: 15px 5px 10px rgba(13, 130, 208, 0.782);
+    ">
+        <h1 style="color: #fff8f88f;padding: 11px;font-size: 34px; margin-top: 0px; ">
+            Face Recognition Based
+            Attendance System</h1>
+    </div>
+
+    {% if mess%}
+    <p class="text-center" style="color: rgb(0, 0, 0);font-size: 20px;">{{ mess }}</p>
+    {% endif %}
+
+    <div class="row text-center" style="padding: 20px;margin: 20px;">
+
+        <div class="col"
+            style="border-radius: 20px;padding: 0px;background-color:rgba(84, 83, 83, 0.8);margin:0px 10px 10px 10px;min-height: 400px;">
+            <h2 style="border-radius: 20px 20px 0px 0px;background-color: rgb(31, 33, 110) ; color: rgba(19, 189, 205, 0.825);padding: 10px;">Today's
+                Attendance <i class="material-icons">assignment</i></h2>
+            <a style="text-decoration: none;max-width: 300px;" href="/start">
+                <button
+                    style="font-size: 24px;font-weight: bold;border-radius: 30px;width:490px;padding: 10px;margin-top: 30px;margin-bottom: 30px;"
+                    type='submit' class='btn btn-primary'>Take Attendance <i
+                        class="material-icons">beenhere</i></button>
+            </a>
+            <table style="background-color: white;">
+                <tr>
+                    <td><b>S No</b></td>
+                    <td><b>Name</b></td>
+                    <td><b>ID</b></td>
+                    <td><b>Time</b></td>
+                </tr>
+                {% if l %}
+
+                {% for i in range(l) %}
+                <tr>
+                    <td>{{ i+1 }}</td>
+                    <td>{{ names[i] }}</td>
+                    <td>{{ rolls[i] }}</td>
+                    <td>{{ times[i] }}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </table>
+
+        </div>
+
+        <div class="col"
+            style="border-radius: 20px;padding: 0px;background-color:rgba(63, 63, 63, 0.8);margin:0px 10px 10px 10px;height: 400px;">
+            <form action='/add' method="POST" enctype="multipart/form-data">
+                <h2 style="border-radius: 20px 20px 0px 0px;background-color: rgb(31, 33, 110) ;color: rgba(18, 148, 174, 0.8);padding: 10px;">Add
+                    New User <i class="material-icons">control_point_duplicate</i></h2>
+                <label style="font-size: 20px; color: rgb(181, 180, 180)"><b>Enter New User Name*</b></label>
+                <br>
+                <input type="text" id="newusername" name='newusername'
+                    style="font-size: 20px;margin-top:10px;margin-bottom:10px;border-radius: 10px;width: 300px; height: 50px;" required>
+                <br>
+                <label style="font-size: 20px;color: rgb(169, 164, 164)"><b>Enter New User Id*</b></label>
+                <br>
+                <input type="number" id="newusereid" name='newuserid'
+                    style="font-size: 20px;margin-top:10px;margin-bottom:10px;border-radius: 10px; width: 300px; height: 50px;" required>
+                <br>
+                <button style="width: 232px;margin-top: 20px;font-size: 20px; border-radius: 10px; width: 300px; height: 50px;" type='submit' class='btn btn-dark'>Add
+                    New User
+                </button>
+                <br>
+                <h5 style="padding: 25px; color: white;"><i>Total Users in Database: {{totalreg}}</i></h5>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
