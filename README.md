@@ -46,13 +46,3 @@ face-recognition-attendance/
 │
 └── templates/
     └── home.html
-
-## Requirements
-
-- Python 3.10 or above
-- Webcam
-
-Install the required Python libraries using:
-
-```bash
-pip install -r requirements.txt
